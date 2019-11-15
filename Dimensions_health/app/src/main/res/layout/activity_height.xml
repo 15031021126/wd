@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite"
+    tools:context=".view.actv.user.setting.HeightActivity">
+
+        <com.wd.health.base.BaseUserTitle
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_title"/>
+        <TextView
+            android:id="@+id/wancheng"
+            android:layout_width="@dimen/dp_52"
+            android:layout_height="@dimen/dp_28"
+            android:text="完成"
+            android:textColor="@color/mywhite"
+            android:gravity="center"
+            android:textSize="@dimen/sp_12"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_32"
+            android:background="@drawable/login_shape"/>
+
+        <RelativeLayout
+            android:id="@+id/rela1"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_below="@id/user_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@mipmap/my_icon_height_n"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_14"
+                            android:textColor="@color/myblack"
+                            android:layout_gravity="center"
+                            android:text="身高"/>
+                </LinearLayout>
+
+                <com.wd.health.base.MyProgress
+                    android:id="@+id/seek1"
+                    android:layout_below="@id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_10" />
+
+                <TextView
+                    android:layout_below="@id/seek1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="50cm"
+                    android:textColor="@color/myblack"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/seek1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="250cm"
+                    android:textColor="@color/myblack"
+                    android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@id/rela1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/mylightgray"/>
+
+        <RelativeLayout
+            android:id="@+id/rela2"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_below="@id/rela1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@mipmap/my_icon_weight_n"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_14"
+                            android:textColor="@color/myblack"
+                            android:layout_gravity="center"
+                            android:text="体重"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_below="@id/linear2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="30kg"
+                    android:textColor="@color/myblack"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/linear2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="150kg"
+                    android:textColor="@color/myblack"
+                    android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@id/rela2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/mylightgray"/>
+
+        <RelativeLayout
+            android:id="@+id/rela3"
+            android:layout_marginLeft="@dimen/dp_20"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_below="@id/rela2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="@dimen/dp_30"
+                            android:layout_height="@dimen/dp_30"
+                            android:src="@mipmap/my_icon_age_n"/>
+                        <TextView
+                            android:layout_marginLeft="@dimen/dp_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="@dimen/sp_14"
+                            android:textColor="@color/myblack"
+                            android:layout_gravity="center"
+                            android:text="年龄"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_below="@id/linear3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:textColor="@color/myblack"
+                    android:textSize="@dimen/sp_14" />
+
+                <TextView
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/linear3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="120"
+                    android:textColor="@color/myblack"
+                    android:textSize="@dimen/sp_14" />
+        </RelativeLayout>
+
+        <View
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_below="@id/rela3"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="@color/mylightgray"/>
+</RelativeLayout>

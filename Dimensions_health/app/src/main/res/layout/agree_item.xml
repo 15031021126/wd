@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/agree"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:src="@mipmap/common_icon_agree_n"/>
+    <TextView
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@id/agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/myblack"
+        android:id="@+id/agree_num"/>
+    <ImageView
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_toRightOf="@id/agree_num"
+        android:id="@+id/disagree"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:src="@mipmap/common_icon_disagree_n"/>
+    <TextView
+        android:layout_marginLeft="@dimen/dp_6"
+        android:layout_toRightOf="@id/disagree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/sp_12"
+        android:textColor="@color/myblack"
+        android:id="@+id/disagree_num"/>
+
+    <ImageView
+        android:layout_marginLeft="@dimen/dp_14"
+        android:layout_toRightOf="@id/disagree_num"
+        android:id="@+id/caina"
+        android:layout_width="@dimen/dp_16"
+        android:layout_height="@dimen/dp_16"
+        android:src="@mipmap/comment_list_icon_adoption_n"/>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/dp_15"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/ill_item1_year"
+        android:textSize="@dimen/sp_16"
+        android:textStyle="bold"
+        android:textColor="@color/myblack"
+        android:includeFontPadding="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_below="@id/ill_item1_year"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ill_item1_rec"/>
+
+
+</RelativeLayout>

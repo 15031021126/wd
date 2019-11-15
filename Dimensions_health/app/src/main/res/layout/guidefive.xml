@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/guideone"
+        android:layout_width="@dimen/dp_186"
+        android:layout_height="@dimen/dp_186"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_150"
+        android:src="@mipmap/guide_pages_five" />
+
+    <TextView
+        android:id="@+id/fivetv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/guideone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_86"
+        android:text="打造健康长青树"
+        android:textColor="#333333"
+        android:textSize="@dimen/sp_14" />
+
+    <Button
+        android:id="@+id/five_bt"
+        android:layout_width="@dimen/dp_84"
+        android:layout_height="@dimen/dp_34"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/guide_pages_shap"
+        android:gravity="center"
+        android:text="马上进入"
+        android:textColor="#ffff"
+        android:layout_marginBottom="@dimen/dp_80"
+        android:textSize="@dimen/sp_14" />
+</RelativeLayout>

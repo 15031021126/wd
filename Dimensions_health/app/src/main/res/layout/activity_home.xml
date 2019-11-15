@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.actv.HomeActivity">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/home_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:layout_weight="1"
+        android:background="@mipmap/the_bottom_bar"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/home_pager"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawableBottom="@drawable/home_home_sel"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_15" />
+
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableBottom="@drawable/home_video_sel"
+            android:gravity="center"
+            android:paddingBottom="@dimen/dp_15" />
+    </RadioGroup>
+
+    <ImageView
+        android:id="@+id/advisory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_35"
+        android:src="@mipmap/common_tab_circle_n"
+        app:layout_constraintBottom_toBottomOf="@+id/home_pager"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

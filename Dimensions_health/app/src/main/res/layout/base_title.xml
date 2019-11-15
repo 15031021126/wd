@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_32"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.facebook.drawee.view.SimpleDraweeView
+        android:clickable="true"
+        android:layout_width="@dimen/dp_32"
+        android:layout_height="@dimen/dp_32"
+        app:failureImage="@mipmap/boy"
+        android:layout_marginLeft="@dimen/dp_12"
+        app:placeholderImage="@mipmap/boy"
+        app:roundAsCircle="true"
+        android:id="@+id/title_head"/>
+    
+    <TextView
+        android:clickable="true"
+        android:id="@+id/title_txt"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/dp_260"
+        android:layout_height="@dimen/dp_32"
+        android:alpha="0.9"
+        android:gravity="center_vertical"
+        android:background="@drawable/title_linear_shape"/>
+
+    <ImageView
+        android:clickable="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_12"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:src="@mipmap/common_nav_message_white_n"
+        android:id="@+id/title_message"/>
+</RelativeLayout>

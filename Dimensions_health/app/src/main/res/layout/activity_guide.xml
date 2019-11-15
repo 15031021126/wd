@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.actv.GuideActivity">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/bgabannerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:banner_pointAutoPlayAble="false"
+        app:banner_pointContainerBackground="#00000000"
+        app:banner_pointContainerLeftRightPadding="@dimen/dp_20"
+        app:banner_pointDrawable="@drawable/banner_point_sel"
+        app:banner_pointTopBottomMargin="@dimen/dp_40" />
+</RelativeLayout>

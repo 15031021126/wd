@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mywhite"
+    tools:context=".view.actv.user.AdopteActivity">
+    <com.wd.health.base.BaseUserTitle
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_title"/>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:layout_below="@id/user_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/refresh_layout">
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/adopte_rec"/>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <com.wd.health.base.NoMessage
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/no_message"
+        android:layout_below="@id/user_title"/>
+</RelativeLayout>
